@@ -186,19 +186,13 @@
         
         <footer>
             <p>Simple HTML Demo Page &copy; <span id="current-year">2023</span> | Created for demonstration purposes</p>
-            <p>This page uses only HTML and CSS - no JavaScript required!</p>
         </footer>
     </div>
     
     <script>
         // Simple JavaScript to update the year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
-        
-        // Simple form submission handler (just for demo, doesn't actually submit)
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Form submitted! (This is just a demo, no data was sent)');
-        });
     </script>
 </body>
 </html>
+
