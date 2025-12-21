@@ -1,2 +1,204 @@
-<iframe title="gfkt_prod_11_2025" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjIzMmEwMGYtODlkZC00YTc3LTkxOTctZWU4MTk4ZjNmNzE2IiwidCI6IjViYWMxMDM2LWRjMzItNDQ0Zi1hYTBhLTkyY2EwYmVhZWE4NSJ9" frameborder="0" allowFullScreen="true">
-</iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Demo Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        main {
+            padding: 30px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #2575fc;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .demo-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #6a11cb;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .button-demo {
+            display: inline-block;
+            background-color: #2575fc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .button-demo:hover {
+            background-color: #6a11cb;
+        }
+        
+        .button-secondary {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        
+        .button-secondary:hover {
+            background-color: #ddd;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f6ff;
+            color: #2575fc;
+        }
+        
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GKFT visuals</h1>
+            <p class="subtitle">Based on the Magrefa collected data</p>
+        </header>
+        
+        <main>
+            <section id="visuals">
+               <iframe title="gfkt_prod_11_2025" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjIzMmEwMGYtODlkZC00YTc3LTkxOTctZWU4MTk4ZjNmNzE2IiwidCI6IjViYWMxMDM2LWRjMzItNDQ0Zi1hYTBhLTkyY2EwYmVhZWE4NSJ9" frameborder="0" allowFullScreen="true">
+               </iframe>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Simple HTML Demo Page &copy; <span id="current-year">2023</span> | Created for demonstration purposes</p>
+            <p>This page uses only HTML and CSS - no JavaScript required!</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Simple JavaScript to update the year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Simple form submission handler (just for demo, doesn't actually submit)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted! (This is just a demo, no data was sent)');
+        });
+    </script>
+</body>
+</html>
