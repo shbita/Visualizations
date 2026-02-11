@@ -20,7 +20,7 @@
         }
         
         .container {
-            max-width: 900px;
+            max-width: 100%;
             margin: 0 auto;
             background-color: white;
             border-radius: 10px;
@@ -79,7 +79,7 @@ header h1 {
             border-top: 1px solid #eee;
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 100%) {
             h1 {
                 font-size: 2rem;
             }
@@ -94,8 +94,8 @@ header h1 {
 <body>
     <div class="container">
         <header>
-            <h1>Dimse visuals</h1>
-            <p class="subtitle">Based on the Magrefa collected data</p>
+            <h1>DIMSE Dashboards</h1>
+            <p class="subtitle">Based on the Magrefa Curated Data</p>
         </header>
         
         <main>
@@ -103,14 +103,13 @@ header h1 {
                       <iframe 
 						title="Dimse_prod_1-2026" 
 						width="100%" 
-						height="400" 
+						height="800" 
 						src="https://app.powerbi.com/view?r=eyJrIjoiMDRhY2M0Y2UtODQ2ZS00NGYwLWFjOTMtN2UyOWNiYWYxMzkyIiwidCI6IjViYWMxMDM2LWRjMzItNDQ0Zi1hYTBhLTkyY2EwYmVhZWE4NSJ9"
 						frameborder="0" 
 						allowFullScreen="true">
 						</iframe>
 			</section>
         </main>
-        
         <footer>
             <p>PBI Demo example <span id="current-year">2023</span> | Created for demonstration purposes</p>
         </footer>
@@ -118,4 +117,5 @@ header h1 {
 
 </body>
 </html>
+
 
